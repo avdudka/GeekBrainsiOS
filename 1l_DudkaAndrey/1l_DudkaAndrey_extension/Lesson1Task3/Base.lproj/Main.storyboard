@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lesson1Task3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sOZ-of-JSP">
+                                <rect key="frame" x="10" y="207.5" width="394" height="491"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ch9-TK-wG3" userLabel="Deposit">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="73.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Deposit amount:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WU1-Kq-UWj">
+                                                <rect key="frame" x="0.0" y="0.0" width="276" height="73.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HwS-0H-qQj">
+                                                <rect key="frame" x="276" y="0.0" width="118" height="73.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="HwS-0H-qQj" firstAttribute="width" secondItem="Ch9-TK-wG3" secondAttribute="width" multiplier="0.3" id="KKv-JN-hZo"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s0x-Qw-s2s" userLabel="Percent">
+                                        <rect key="frame" x="0.0" y="73.5" width="394" height="74"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Deposit percent:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yzm-lE-lhO">
+                                                <rect key="frame" x="0.0" y="0.0" width="276" height="74"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ib8-EQ-ooB">
+                                                <rect key="frame" x="276" y="0.0" width="118" height="74"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Ib8-EQ-ooB" firstAttribute="width" secondItem="s0x-Qw-s2s" secondAttribute="width" multiplier="0.3" id="RgI-Wz-4DF"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvd-f0-Bbv">
+                                        <rect key="frame" x="0.0" y="147.5" width="394" height="73.5"/>
+                                        <state key="normal" title="Calculate"/>
+                                        <connections>
+                                            <action selector="countPercent" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ua-2E-Sre"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pmt-ih-mfI" userLabel="Space">
+                                        <rect key="frame" x="0.0" y="221" width="394" height="122.5"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5E7-fy-skc" userLabel="DepositWCap">
+                                        <rect key="frame" x="0.0" y="343.5" width="394" height="74"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Deposit amount in 5 years  (with capitalisation):" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mzO-z3-9p1">
+                                                <rect key="frame" x="0.0" y="0.0" width="383.5" height="74"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nM-O0-tNQ">
+                                                <rect key="frame" x="383.5" y="0.0" width="10.5" height="74"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vlj-Rd-Dsj" userLabel="DepositWOCap">
+                                        <rect key="frame" x="0.0" y="417.5" width="394" height="73.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Deposit amount in 5 years  (no capitalisation):" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bEI-4S-4So">
+                                                <rect key="frame" x="0.0" y="0.0" width="383.5" height="73.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IaW-JT-odl">
+                                                <rect key="frame" x="383.5" y="0.0" width="10.5" height="73.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="s0x-Qw-s2s" firstAttribute="height" secondItem="sOZ-of-JSP" secondAttribute="height" multiplier="0.15" id="5G7-Z5-HTY"/>
+                                    <constraint firstItem="Ch9-TK-wG3" firstAttribute="height" secondItem="sOZ-of-JSP" secondAttribute="height" multiplier="0.15" id="7Yu-u5-w5W"/>
+                                    <constraint firstItem="5E7-fy-skc" firstAttribute="height" secondItem="sOZ-of-JSP" secondAttribute="height" multiplier="0.15" id="c4A-XR-KOt"/>
+                                    <constraint firstItem="Zvd-f0-Bbv" firstAttribute="height" secondItem="sOZ-of-JSP" secondAttribute="height" multiplier="0.15" id="kZx-D2-zjt"/>
+                                    <constraint firstItem="vlj-Rd-Dsj" firstAttribute="height" secondItem="sOZ-of-JSP" secondAttribute="height" multiplier="0.15" id="ngm-Rs-Wke"/>
+                                    <constraint firstItem="pmt-ih-mfI" firstAttribute="height" secondItem="sOZ-of-JSP" secondAttribute="height" multiplier="0.25" id="yXV-Og-ee3"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sOZ-of-JSP" secondAttribute="trailing" constant="10" id="3WL-b9-XH7"/>
+                            <constraint firstItem="sOZ-of-JSP" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.6" id="Az9-aT-cYi"/>
+                            <constraint firstItem="sOZ-of-JSP" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Iki-h2-YAX"/>
+                            <constraint firstItem="sOZ-of-JSP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="zZB-0g-zBT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="depositAmount" destination="HwS-0H-qQj" id="fxH-cK-wGp"/>
+                        <outlet property="depositPercent" destination="Ib8-EQ-ooB" id="8WI-U8-sdo"/>
+                        <outlet property="resultAmountNoCap" destination="IaW-JT-odl" id="73a-Zp-1AK"/>
+                        <outlet property="resultAmountWithCap" destination="8nM-O0-tNQ" id="m9h-TY-TVs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="119.86607142857142"/>
+        </scene>
+    </scenes>
+</document>
