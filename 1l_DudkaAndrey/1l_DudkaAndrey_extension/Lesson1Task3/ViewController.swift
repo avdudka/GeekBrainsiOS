@@ -45,7 +45,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         var newAmount = amount
         for _ in 1...5 {
             newAmount = newAmount + newAmount*percent/100}
-        return round(newAmount*100)/100
+        return round(newAmount * 100)/100
     }
     
     func countDepositWOCap(amount: Double, percent: Double) -> Double {
